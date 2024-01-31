@@ -1,0 +1,35 @@
+
+# POST http://localhost:3000/api/users
+# Content-Type: application/json
+
+# {
+#     "name":"kelompok50",
+#     "username": "cust14",
+#     "password": "bebanpartian"
+# }
+
+# Login user and get authentication token
+# POST http://localhost:3000/api/users/login
+# Content-Type: application/json
+
+# {
+#     "username": "cust14",
+#     "password": "bebanpartian"
+# }
+
+# # # Get current user information
+# GET http://localhost:3000/api/users/current
+# Authorization: Bearer 7feceb19-1f84-4d57-aac5-77f96fcb12f8
+
+# # # Update current user information
+# PATCH http://localhost:3000/api/users/current
+# Content-Type: application/json
+# Authorization: Bearer 7feceb19-1f84-4d57-aac5-77f96fcb12f8
+
+#  {
+#     "name": "kelompoksatuduatiga"
+#  }
+
+# # # # Logout current user
+# DELETE http://localhost:3000/api/users/logout
+# Authorization: Bearer 6f2e48ed-d51f-43c3-9c00-061d771dc0e0

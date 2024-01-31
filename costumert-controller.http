@@ -1,0 +1,43 @@
+# Login user and get authentication token
+# POST http://localhost:3000/api/users/login
+# Content-Type: application/json
+
+# {
+#     "username": "cust12",
+#     "password": "bebanpartian"
+# }
+
+# Create a new Costumert
+# POST http://localhost:3000/api/Costumerts
+# Content-Type: application/json
+# Authorization: Bearer dff3ef00-c5d9-46f0-ba61-a3f2efe685e0
+
+# {  
+#     "name": "Test Customer",
+#     "nikname": "test_nickname",
+#     "email": "test@example.com",
+#     "phone": "1234567890"
+# }
+
+# # Get the created Costumert
+# GET http://localhost:3000/api/Costumerts/59
+# Authorization: Bearer dff3ef00-c5d9-46f0-ba61-a3f2efe685e0
+
+# # Update the created Costumert
+# PUT http://localhost:3000/api/Costumerts/59
+# Content-Type: application/json
+# Authorization: Bearer dff3ef00-c5d9-46f0-ba61-a3f2efe685e0
+
+# {
+#     "name": "Updated Costumert"
+# }
+
+# Search for Costumerts
+
+# GET http://localhost:3000/api/Costumerts
+# Authorization: Bearer dff3ef00-c5d9-46f0-ba61-a3f2efe685e0
+
+# # # # Logout current Costumerts
+
+# DELETE http://localhost:3000/api/Costumerts/59
+# Authorization: Bearer 414a9668-bf0d-49e7-9d3f-c4149f17162c
